@@ -1,7 +1,6 @@
 {
   "name": "project-gulp",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,6 +12,8 @@
     "gulp": "^4.0.2"
   },
   "dependencies": {
+    "gulp-autoprefixer": "^7.0.1",
     "gulp-sass": "^4.1.0"
-  }
+  },
+  "description": ""
 }
