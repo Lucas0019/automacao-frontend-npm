@@ -1,0 +1,1 @@
+h1{color:#ffff}body{background:tomato}section{display:-webkit-box;display:-ms-flexbox;display:flex}section li{list-style-type:none;margin-left:1em;background:aquamarine;padding:1em;border-radius:5px}section li:hover{background:aqua;cursor:pointer}

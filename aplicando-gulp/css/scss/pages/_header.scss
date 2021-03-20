@@ -1,0 +1,21 @@
+body {
+    background: tomato;
+}
+
+section {
+    display: flex;
+    & li {
+        list-style-type: none;
+        margin-left: 1em;
+        background: aquamarine;
+        padding: 1em;
+        border-radius: 5px;
+
+        &:hover {
+            background: aqua;
+            cursor: pointer;
+        }
+    }
+
+
+}
