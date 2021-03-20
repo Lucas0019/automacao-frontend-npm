@@ -1,0 +1,1 @@
+alert('Uma aplicação origamid')
