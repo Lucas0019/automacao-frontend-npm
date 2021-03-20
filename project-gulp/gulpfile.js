@@ -19,3 +19,12 @@ function complilaStyles() {
 
 //Ativa a task
 gulp.task('sass', complilaStyles)
+
+
+//Gulp Watch task
+function watch() {
+  gulp.watch('styles/scss/*.scss', complilaStyles)
+}
+
+//Add a uma tarefa para execultar
+gulp.task('default', watch)
