@@ -1,35 +1,32 @@
+'use strict';
+
 {
-    alert('Esse é um projeto origamid')
-}
-{
+  var animaImg = function animaImg() {
+    if (img.classList.contains('active')) {
+      img.classList.remove('active');
+    } else {
+      img.classList.add('active');
+    }
+  };
 
-const img = document.querySelector('.modal-img');
+  var img = document.querySelector('.modal-img');
 
-function animaImg() {
-  if(img.classList.contains('active')) {
-    img.classList.remove('active');
-  } else {
-    img.classList.add('active');
-  }
-}
-
-img.addEventListener('click', animaImg);
-
+  img.addEventListener('click', animaImg);
 }
 {
-const modalBtn = document.querySelector('.abrir-modal');
-const modal = document.querySelector('.modal');
+  var activeModal = function activeModal(e) {
+    e.preventDefault();
+    if (modal.classList.contains('active')) {
+      modal.classList.remove('active');
+      modalBtn.innerText = 'Abrir Modal';
+    } else {
+      modal.classList.add('active');
+      modalBtn.innerText = 'Fechar Modal';
+    }
+  };
 
-function activeModal(e) {
-  e.preventDefault();
-  if(modal.classList.contains('active')) {
-    modal.classList.remove('active');
-    modalBtn.innerText = 'Abrir Modal';
-  } else {
-    modal.classList.add('active');
-    modalBtn.innerText = 'Fechar Modal';
-  }
-}
+  var modalBtn = document.querySelector('.abrir-modal');
+  var modal = document.querySelector('.modal');
 
-modalBtn.addEventListener('click', activeModal);
+  modalBtn.addEventListener('click', activeModal);
 }
