@@ -1,1 +1,0 @@
-alert('Uma aplicação origamid')
